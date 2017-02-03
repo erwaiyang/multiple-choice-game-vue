@@ -2,18 +2,21 @@
   <div id="app">
     <top></top>
     <slogan></slogan>
+    <samples></samples>
   </div>
 </template>
 
 <script>
 import Top from './components/Top';
 import Slogan from './components/Slogan';
+import Samples from './components/Samples';
 
 export default {
   name: 'app',
   components: {
     Top,
     Slogan,
+    Samples,
   },
 };
 </script>
