@@ -17,6 +17,7 @@ export default {
 <style scoped>
 header{
   display: flex;
+  padding: 0.3rem 1rem;
 }
 
 h1 {
