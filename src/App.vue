@@ -1,25 +1,30 @@
 <template>
   <div id="app">
     <top></top>
-    <hello></hello>
+    <slogan></slogan>
   </div>
 </template>
 
 <script>
 import Top from './components/Top';
-import Hello from './components/Hello';
+import Slogan from './components/Slogan';
 
 export default {
   name: 'app',
   components: {
-    Hello,
     Top,
+    Slogan,
   },
 };
 </script>
 
 <style>
 @import "normalize.css";
+
+html, body, #app {
+  width: 100%;
+  height: 100%;
+}
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
