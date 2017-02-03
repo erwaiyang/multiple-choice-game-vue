@@ -2,10 +2,9 @@
   <section class="samples">
     <ul>
       <li v-for="q in questions">
-        {{ q.q }}
+        <div class="question" v-html="compiledMd(q.q)"></div>
         <ol>
-          <li v-for="ans in q.answers">
-            {{ ans }}
+          <li v-for="ans in q.answers" v-html="compiledMd(ans)">
           </li>
         </ol>
       </li>
@@ -14,6 +13,7 @@
 </template>
 
 <script>
+import marked from 'marked';
 import data from 'data/samples';
 
 export default {
@@ -22,6 +22,11 @@ export default {
     return {
       questions: data,
     };
+  },
+  methods: {
+    compiledMd(plainText) {
+      return marked(plainText, { sanitize: true });
+    },
   },
 };
 </script>

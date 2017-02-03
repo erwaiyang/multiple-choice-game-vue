@@ -13,6 +13,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
+    "marked": "^0.3.6",
     "normalize.css": "^5.0.0",
     "vue": "^2.1.0"
   },
