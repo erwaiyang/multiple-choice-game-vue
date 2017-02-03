@@ -3,6 +3,7 @@
     <top></top>
     <slogan></slogan>
     <samples></samples>
+    <create-your-own></create-your-own>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Top from './components/Top';
 import Slogan from './components/Slogan';
 import Samples from './components/Samples';
+import CreateYourOwn from './components/CreateYourOwn';
 
 export default {
   name: 'app',
@@ -17,6 +19,7 @@ export default {
     Top,
     Slogan,
     Samples,
+    CreateYourOwn,
   },
 };
 </script>
