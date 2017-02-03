@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Slogan from 'src/components/Slogan';
 
-describe('Hello.vue', () => {
+describe('Slogan.vue', () => {
   it('should render correct contents', () => {
     const vm = new Vue({
       el: document.createElement('div'),
