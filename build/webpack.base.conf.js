@@ -71,11 +71,10 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        loader: 'url',
-        query: {
-          limit: 10000,
-          name: utils.assetsPath('img/[name].[hash:7].[ext]')
-        }
+        loaders: [
+          'url?limit=10000&name=' + utils.assetsPath('img/[name].[hash:7].[ext]'),
+          'image-webpack?{optipng:{optimizationLevel: 7}, gifsicle:{interlaced: false}, pngquant:{quality: "65-90", speed: 4}, mozjpeg: {quality: 30}}',
+        ]
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
