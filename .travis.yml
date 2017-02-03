@@ -16,7 +16,7 @@ after_script:
   - git config user.email "bdlas321@gmail.com"
   - git add -A
   - git commit -m "site updated"
-  - git push --quiet --force https://$GH_TOKEN@github.com/erwaiyang/erwai.github.io.git gh-pages
+  - git push --force https://$GH_TOKEN@github.com/erwaiyang/multiple-choice-game-vue.git gh-pages
 
 branches:
   only:
