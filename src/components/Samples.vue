@@ -45,11 +45,18 @@ section{
   border: 1px solid grey;
 }
 .answers li{
+  transition: all 0.5s ease;
   display: inline-block;
   width: 15%;
   margin: 0 1rem;
   border-radius: 15px;
-  border: 1px solid grey;
+  border: 1px solid #181003;
+  background-color: white;
+  cursor: pointer;
+}
+.answers li:hover{
+  background-color: #181003;
+  color: white;
 }
 @media only screen and (max-width: 768px){
   .answers li{
