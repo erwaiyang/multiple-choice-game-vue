@@ -6,8 +6,18 @@ node_js:
   - "6"
 script:
   - npm run lint
-  - npm test
+  - npm run unit
   - npm run build
+
+after_script:
+  - cd ./dist
+  - git init
+  - git config user.name "Jean Yang"
+  - git config user.email "bdlas321@gmail.com"
+  - git add -A
+  - git commit -m "site updated"
+  - git push --quiet --force https://$GH_TOKEN@github.com/erwaiyang/erwai.github.io.git gh-pages
+
 branches:
   only:
     - master
