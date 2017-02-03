@@ -4,6 +4,7 @@
     <slogan></slogan>
     <samples></samples>
     <create-your-own></create-your-own>
+    <features></features>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Top from './components/Top';
 import Slogan from './components/Slogan';
 import Samples from './components/Samples';
 import CreateYourOwn from './components/CreateYourOwn';
+import Features from './components/Features';
 
 export default {
   name: 'app',
@@ -20,6 +22,7 @@ export default {
     Slogan,
     Samples,
     CreateYourOwn,
+    Features,
   },
 };
 </script>
