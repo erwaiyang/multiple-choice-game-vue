@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="top">
     <h1>Multiple Choice Game</h1>
     <ul>
       <li>Sign In / Sign Up</li>
