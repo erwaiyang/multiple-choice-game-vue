@@ -14,7 +14,7 @@ after_script:
   - git init
   - git config user.name "Jean Yang"
   - git config user.email "bdlas321@gmail.com"
-  - git add -A
+  - git add .
   - git commit -m "site updated"
   - git push --force https://$GH_TOKEN@github.com/erwaiyang/multiple-choice-game-vue.git gh-pages
 
