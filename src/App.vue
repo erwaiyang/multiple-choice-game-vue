@@ -37,6 +37,8 @@ html, body, #app {
 
 ul, ol, li{
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   -webkit-margin-start: 0;
